@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ad Günü Xatırlatma</title>
+<style>
+body { font-family: Arial, sans-serif; background:#0f172a; color:#e5e7eb; margin:0; padding:0; }
+.container{ max-width:600px; margin:auto; padding:20px; }
+h1,h2{ color:#22d3ee; }
+input,button{ padding:10px; border-radius:8px; border:none; margin:5px 0; }
+input{ width: calc(100% - 24px); }
+button{ background:#22d3ee; color:#111827; cursor:pointer; }
+ul{ list-style:none; padding:0; }
+li{ margin:5px 0; padding:5px; background:#111827; border-radius:8px; display:flex; justify-content:space-between; align-items:center; }
+.today{ color:#10b981; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🎉 Ad Günü Xatırlatma</h1>
+<button id="loginBtn">Google ilə daxil ol</button>
+<button id="logoutBtn" style="display:none;">Çıxış</button>
+
+<h2>Yeni ad günü əlavə et</h2>
+<input type="text" id="name" placeholder="Ad, Soyad">
+<input type="date" id="date">
+<button id="addBtn">Əlavə et</button>
+
+<h2>Sizin siyahınız</h2>
+<ul id="birthdayList"></ul>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
