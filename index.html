@@ -19,19 +19,6 @@
     </div>
 
     <script src="script.js"></script>
-    <script>
-        function shareSite() {
-            const shareData = {
-                title: "Səni Sevməyimin 200 Səbəbi 💖",
-                text: "Bax bu sənə həsr olunub 🥺💘",
-                url: window.location.href
-            };
-            if (navigator.share) {
-                navigator.share(shareData).catch(err => console.error("Paylaşmaq mümkün olmadı:", err));
-            } else {
-                alert("Paylaşma funksiyası bu cihazda dəstəklənmir.");
-            }
-        }
-    </script>
+    
 </body>
 </html>
