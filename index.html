@@ -7,22 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Paylaş düyməsi yuxarıda -->
+    <div class="share-button">
+        <button onclick="shareSite()">💌 Saytı paylaş</button>
+    </div>
+
     <div class="container">
         <img src="profil.jpg" alt="Profil şəkli" class="avatar">
         <h1>Sənin adın</h1>
         <div id="links" class="links"></div>
-
-        <!-- Saytı paylaş düyməsi -->
-        <div class="share-button">
-            <button onclick="shareSite()">💌 Saytı paylaş</button>
-        </div>
     </div>
+
     <script src="script.js"></script>
     <script>
         function shareSite() {
             const shareData = {
-                title: "My Portfolio",
-                text: "Qısacə hər şey deyək",
+                title: "Səni Sevməyimin 200 Səbəbi 💖",
+                text: "Bax bu sənə həsr olunub 🥺💘",
                 url: window.location.href
             };
             if (navigator.share) {
