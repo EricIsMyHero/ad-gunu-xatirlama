@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saytlarım</title>
+    <title>Mənim Linklərim</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,26 @@
         <img src="profil.jpg" alt="Profil şəkli" class="avatar">
         <h1>Sənin adın</h1>
         <div id="links" class="links"></div>
+
+        <!-- Saytı paylaş düyməsi -->
+        <div class="share-button">
+            <button onclick="shareSite()">💌 Saytı paylaş</button>
+        </div>
     </div>
     <script src="script.js"></script>
+    <script>
+        function shareSite() {
+            const shareData = {
+                title: "My Portfolio",
+                text: "Qısacə hər şey deyək",
+                url: window.location.href
+            };
+            if (navigator.share) {
+                navigator.share(shareData).catch(err => console.error("Paylaşmaq mümkün olmadı:", err));
+            } else {
+                alert("Paylaşma funksiyası bu cihazda dəstəklənmir.");
+            }
+        }
+    </script>
 </body>
-</html> 
+</html>
