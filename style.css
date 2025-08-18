@@ -1,22 +1,46 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #9b5de5, #00bbf9, #00f5d4); /* soft purple-blue */
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4); /* pastel çəhrayı və açıq tonlar */
     color: white;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     min-height: 100vh;
+}
+
+.share-button {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.share-button button {
+  padding: 10px 20px;
+  background-color: #c2185b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.share-button button:hover {
+  background-color: #a01048;
 }
 
 .container {
     text-align: center;
     max-width: 400px;
     width: 90%;
-    margin-top: 30px; /* yuxarıdan boşluq */
+    margin-top: 10px; /* profil şəkli daha yuxarı */
 }
 
 .avatar {
-    width: 150px; /* böyüdüldü */
+    width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 4px solid white;
@@ -26,6 +50,8 @@ body {
 h1 {
     font-size: 26px;
     margin-bottom: 25px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
 .links {
@@ -41,33 +67,12 @@ h1 {
     text-decoration: none;
     border-radius: 10px;
     font-weight: bold;
-    border: 2px solid #ccc; /* çərçivə əlavə edildi */
+    border: 2px solid #ccc;
     transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
 .link-item:hover {
     transform: scale(1.05);
     background: #f9f9f9;
-    border-color: #666; /* hover zamanı çərçivə rəngi dəyişsin */
-}
-
-.share-button {
-    margin-top: 30px;
-}
-
-.share-button button {
-    background: #ffffff;
-    color: #000;
-    border: none;
-    padding: 10px 18px;
-    font-size: 16px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.2s ease, background 0.2s ease;
-}
-
-.share-button button:hover {
-    transform: scale(1.05);
-    background: #f0f0f0;
-}
+    border-color: #666;
+} 
