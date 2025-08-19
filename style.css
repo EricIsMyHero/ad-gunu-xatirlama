@@ -1,13 +1,40 @@
+/* Rəng dəyişkənləri (variables) */
+:root {
+    /* Açıq rejim rəngləri */
+    --bg-gradient: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+    --text-color: #fff;
+    --link-bg: white;
+    --link-color: black;
+    --border-color: #000000;
+    --category-bg: #f0f0f0;
+    --category-border: #000;
+    --active-color: #c2185b;
+}
+
+body.dark-theme {
+    /* Qaranlıq rejim rəngləri */
+    --bg-gradient: linear-gradient(135deg, #2c3e50, #2c3e50);
+    --text-color: #e0e0e0;
+    --link-bg: #34495e;
+    --link-color: #e0e0e0;
+    --border-color: #555;
+    --category-bg: #444;
+    --category-border: #888;
+    --active-color: #3498db;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
-    color: white;
+    background: var(--bg-gradient);
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
     position: relative;
+    /* Rəng keçidlərini hamar etmək üçün */
+    transition: background 0.5s ease, color 0.5s ease;
 }
 
 .share-button {
@@ -18,8 +45,8 @@ body {
 
 .share-button button {
     padding: 10px 20px;
-    background-color: #c2185b;
-    color: white;
+    background-color: var(--active-color);
+    color: var(--text-color);
     border: none;
     border-radius: 10px;
     font-size: 16px;
@@ -30,7 +57,7 @@ body {
 }
 
 .share-button button:hover {
-    background-color: #a01048;
+    background-color: #a01048; /* Bu rəng dəyişkənliyə daxil deyil */
 }
 
 .container {
@@ -51,8 +78,17 @@ body {
 h1 {
     font-size: 26px;
     margin-bottom: 25px;
-    color: #fff;
+    color: var(--text-color);
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.bio {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-top: -15px;
+    margin-bottom: 25px;
+    max-width: 300px;
+    font-weight: 500;
 }
 
 .links {
@@ -63,14 +99,13 @@ h1 {
 
 .link-item {
     padding: 12px;
-    background: white;
-    color: black;
+    background: var(--link-bg);
+    color: var(--link-color);
     text-decoration: none;
     border-radius: 10px;
     font-weight: bold;
-    border: 2px solid #000000;
+    border: 2px solid var(--border-color);
     transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
-    /* Yeni əlavə: Sayt açıldıqda yavaşca görünmə effekti */
     animation: fadeIn 1s ease-out;
 }
 
@@ -89,9 +124,9 @@ h1 {
 
 .category-button {
     padding: 8px 15px;
-    background-color: #f0f0f0;
-    border: 2px solid #000;
-    color: #000;
+    background-color: var(--category-bg);
+    border: 2px solid var(--category-border);
+    color: var(--link-color);
     border-radius: 20px;
     font-size: 14px;
     font-weight: bold;
@@ -101,12 +136,11 @@ h1 {
 
 .category-button:hover,
 .category-button.active {
-    background-color: #fff;
-    color: #c2185b;
-    border-color: #c2185b;
+    background-color: var(--link-bg);
+    color: var(--active-color);
+    border-color: var(--active-color);
 }
 
-/* Yeni əlavə: Animasiya tərifi */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -118,7 +152,6 @@ h1 {
     }
 }
 
-/* Yeni əlavə: Responsivlik qaydaları */
 @media (max-width: 600px) {
     .container {
         width: 95%;
@@ -144,12 +177,4 @@ h1 {
         font-size: 14px;
     }
 }
-/* Yeni əlavə: Bio üçün stil */
-.bio {
-    font-size: 16px;
-    color: #fff;
-    margin-top: -15px; /* Başlıqla arasındakı məsafəni tənzimləmək üçün */
-    margin-bottom: 25px;
-    max-width: 300px;
-    font-weight: 500;
-}
+ 
