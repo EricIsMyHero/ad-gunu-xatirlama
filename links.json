@@ -1,14 +1,32 @@
-[
-  {
-    "title": "Instagram",
-    "url": "https://instagram.com/seninhesabin"
-  },
-  {
-    "title": "YouTube",
-    "url": "https://youtube.com/seninkanalin"
-  },
-  {
-    "title": "Portfolio",
-    "url": "https://səninportfolio.com"
-  }
-]
+{
+  "websites": [
+    {
+      "title": "Portfolio",
+      "url": "https://səninportfolio.com"
+    },
+    {
+      "title": "Bloq",
+      "url": "https://səninbloqun.com"
+    }
+  ],
+  "social": [
+    {
+      "title": "Instagram",
+      "url": "https://instagram.com/seninhesabin"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://youtube.com/seninkanalin"
+    }
+  ],
+  "other": [
+    {
+      "title": "Əlaqə formu",
+      "url": "https://elaqe.formu"
+    },
+    {
+      "title": "Sənin kitabın",
+      "url": "https://səninkitabın.com"
+    }
+  ]
+}
