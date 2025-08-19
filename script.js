@@ -60,3 +60,27 @@ function shareSite() {
         alert("Paylaşma funksiyası bu cihazda dəstəklənmir.");
     }
 }
+// ... mövcud kodlar ...
+
+function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle('dark-theme');
+    const themeButton = document.getElementById('theme-toggle');
+
+    if (body.classList.contains('dark-theme')) {
+        themeButton.textContent = '🌙';
+        localStorage.setItem('theme', 'dark');
+    } else {
+        themeButton.textContent = '☀️';
+        localStorage.setItem('theme', 'light');
+    }
+}
+
+// Səhifə yüklənəndə son mövzunu yadda saxla
+document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-theme');
+        document.getElementById('theme-toggle').textContent = '🌙';
+    }
+});
