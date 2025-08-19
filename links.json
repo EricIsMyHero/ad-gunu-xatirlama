@@ -17,15 +17,31 @@
   ],
   "social": [
     {
-      "title": "Instagram",
-      "url": "https://www.instagram.com/the.real.ali77?igsh=eXhrZzNlMGhuNjhn",
-      "icon": "fab fa-instagram"
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@ericismyhero",
+      "icon": "fab fa-youtube"
     },
     {
       "title": "TikTok",
-      "url": "https://www.tiktok.com/@ericismyhero_?_t=ZS-8z0SFcQ0QbM&_r=1",
-      "icon": "fab fa-youtube"
+      "url": "https://www.tiktok.com/@ericismyhero_",
+      "icon": "fab fa-tiktok"
     },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/the.real.ali77",
+      "icon": "fab fa-instagram"
+    },
+    {
+      "title": "Threads",
+      "url": "https://www.threads.com/@the.real.ali77",
+      "icon": "fab fa-threads"
+    },
+    {
+      "title": "X (Twitter)",
+      "url": "https://x.com/EricIsMyHero_0",
+      "icon": "fab fa-x"
+    }
+  ],
     {
       "title": "GitHub",
       "url": "https://github.com/EricIsMyHero",
