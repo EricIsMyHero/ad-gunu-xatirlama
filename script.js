@@ -9,7 +9,8 @@ fetch("links.json")
         document.querySelector('.avatar').src = allLinks.profile.avatar;
         document.querySelector('h1').textContent = allLinks.profile.name;
         
-        showLinks('websites'); 
+        // Dəyişiklik buradadır: sayt yüklənəndə "social" bölməsi aktiv olur
+        showLinks('social'); 
     })
     .catch(error => console.error("Linkləri yükləmək mümkün olmadı:", error));
 
