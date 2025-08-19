@@ -17,13 +17,18 @@
 {
       "title": "Bir Şans Daha?",
       "url": "https://ericismyhero.github.io/bir-shans-daha-/",
-      "icon": "fas fa-question"
+      "icon": "fas fa-chance"
     },
     {
       "title": "Hər Gün 1 iltifat",
       "url": "https://ericismyhero.github.io/her-g-n-1-iltifat/",
-      "icon": "fas fa-shy"
+      "icon": "fas fa-one"
     }
+    {
+      "title": "Mahnı Paylaşma",
+      "url": "https://EricIsMyHero.github.io/mahni-paylashma/",
+      "icon": "fas fa-music"
+    },
   ],
   "social": [
     {
