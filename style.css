@@ -70,6 +70,8 @@ h1 {
     font-weight: bold;
     border: 2px solid #000000;
     transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    /* Yeni əlavə: Sayt açıldıqda yavaşca görünmə effekti */
+    animation: fadeIn 1s ease-out;
 }
 
 .link-item:hover {
@@ -102,4 +104,43 @@ h1 {
     background-color: #fff;
     color: #c2185b;
     border-color: #c2185b;
+}
+
+/* Yeni əlavə: Animasiya tərifi */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Yeni əlavə: Responsivlik qaydaları */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        margin-top: 5vh;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .share-button {
+        top: 10px;
+        right: 10px;
+    }
+
+    .share-button button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
 }
