@@ -7,13 +7,13 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    position: relative; /* Share button-un mövqeyi üçün vacibdir */
+    position: relative;
 }
 
 .share-button {
-    position: absolute; /* Mütləq mövqe */
-    top: 20px;          /* Yuxarıdan 20px məsafədə */
-    right: 20px;        /* Sağdan 20px məsafədə */
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .share-button button {
@@ -37,7 +37,7 @@ body {
     text-align: center;
     max-width: 400px;
     width: 90%;
-    margin-top: 5vh; /* Profil şəklinin daha aşağı düşməsi üçün */
+    margin-top: 5vh;
 }
 
 .avatar {
