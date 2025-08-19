@@ -144,3 +144,12 @@ h1 {
         font-size: 14px;
     }
 }
+/* Yeni əlavə: Bio üçün stil */
+.bio {
+    font-size: 16px;
+    color: #fff;
+    margin-top: -15px; /* Başlıqla arasındakı məsafəni tənzimləmək üçün */
+    margin-bottom: 25px;
+    max-width: 300px;
+    font-weight: 500;
+}
