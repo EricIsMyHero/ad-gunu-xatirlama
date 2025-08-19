@@ -49,14 +49,14 @@
   ],
   "other": [
     {
-      "title": "Əlaqə formu",
-      "url": "https://elaqe.formu",
-      "icon": "fas fa-envelope"
+      "title": "Discord Sunucu",
+      "url": "https://discord.gg/62wNrV79HR",
+      "icon": "fas fa-discord"
     },
     {
       "title": "Sənin kitabın",
-      "url": "https://səninkitabın.com",
-      "icon": "fas fa-book"
+      "url": "https://open.spotify.com/user/r54xg6cy20z3k1xuif2lrjmu7?si=i3ektKTrSTi1ncGVDhL-cw",
+      "icon": "fas fa-spotify"
     }
   ]
 }
