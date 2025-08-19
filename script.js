@@ -9,7 +9,7 @@ fetch("links.json")
         document.querySelector('.avatar').src = allLinks.profile.avatar;
         document.querySelector('h1').textContent = allLinks.profile.name;
         
-        // Bu hissə dəyişdirildi: İndi sayt yüklənəndə "social" bölməsi aktiv olur
+        // Səhifə yüklənəndə "social" bölməsini aktiv edir
         showLinks('social'); 
     })
     .catch(error => console.error("Linkləri yükləmək mümkün olmadı:", error));
@@ -60,7 +60,6 @@ function shareSite() {
         alert("Paylaşma funksiyası bu cihazda dəstəklənmir.");
     }
 }
-// ... mövcud kodlar ...
 
 function toggleTheme() {
     const body = document.body;
