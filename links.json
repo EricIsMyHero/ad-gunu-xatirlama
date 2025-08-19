@@ -1,32 +1,47 @@
 {
+  "profile": {
+    "name": "EricIsMyHero",
+    "avatar": "https://avatars.githubusercontent.com/u/176608906?v=4"
+  },
   "websites": [
     {
       "title": "Portfolio",
-      "url": "https://səninportfolio.com"
+      "url": "https://səninportfolio.com",
+      "icon": "fas fa-briefcase"
     },
     {
       "title": "Bloq",
-      "url": "https://səninbloqun.com"
+      "url": "https://səninbloqun.com",
+      "icon": "fas fa-blog"
     }
   ],
   "social": [
     {
       "title": "Instagram",
-      "url": "https://instagram.com/seninhesabin"
+      "url": "https://instagram.com/seninhesabin",
+      "icon": "fab fa-instagram"
     },
     {
       "title": "YouTube",
-      "url": "https://youtube.com/seninkanalin"
+      "url": "https://youtube.com/seninkanalin",
+      "icon": "fab fa-youtube"
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/seninhesabin",
+      "icon": "fab fa-github"
     }
   ],
   "other": [
     {
       "title": "Əlaqə formu",
-      "url": "https://elaqe.formu"
+      "url": "https://elaqe.formu",
+      "icon": "fas fa-envelope"
     },
     {
       "title": "Sənin kitabın",
-      "url": "https://səninkitabın.com"
+      "url": "https://səninkitabın.com",
+      "icon": "fas fa-book"
     }
   ]
 }
