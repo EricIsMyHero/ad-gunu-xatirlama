@@ -57,11 +57,11 @@
       "title": "Spotify",
       "url": "https://open.spotify.com/user/r54xg6cy20z3k1xuif2lrjmu7?si=i3ektKTrSTi1ncGVDhL-cw",
       "icon": "fas fa-spotify"
-    }
-  ],
+    },
   {
       "title": "Pinterest",
       "url": "https://pin.it/3G3vV67cB",
       "icon": "fas fa-pinterest"
     }
 }
+],
