@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Paylaş düyməsi yuxarıda -->
     <div class="share-button">
         <button onclick="shareSite()">💌 Saytı paylaş</button>
     </div>
@@ -15,10 +14,16 @@
     <div class="container">
         <img src="profil.jpg" alt="Profil şəkli" class="avatar">
         <h1>Sənin adın</h1>
+
+        <div class="categories">
+            <button class="category-button active" onclick="showLinks('websites')">Saytlar</button>
+            <button class="category-button" onclick="showLinks('social')">Sosial Şəbəkələr</button>
+            <button class="category-button" onclick="showLinks('other')">Digər</button>
+        </div>
+
         <div id="links" class="links"></div>
     </div>
 
     <script src="script.js"></script>
-    
 </body>
 </html>
