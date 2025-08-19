@@ -77,7 +77,6 @@ h1 {
     border-color: #666;
 }
 
-/* Yeni əlavələr: Kateqoriya düymələri üçün stillər */
 .categories {
     display: flex;
     justify-content: center;
@@ -85,20 +84,22 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Yeni dəyişikliklər buradadır */
 .category-button {
     padding: 8px 15px;
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
+    background-color: #f0f0f0; /* Açıq boz fon */
+    border: 2px solid #000;    /* Qara sərhəd */
+    color: #000;              /* Qara yazı rəngi */
     border-radius: 20px;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: bold;         /* Yazı qalın (bold) */
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .category-button:hover,
 .category-button.active {
-    background-color: white;
-    color: #c2185b;
+    background-color: #fff;     /* Aktiv/hover zamanı ağ fon */
+    color: #c2185b;           /* Yazı rəngi dəyişir */
+    border-color: #c2185b;      /* Sərhəd rəngi dəyişir */
 }
