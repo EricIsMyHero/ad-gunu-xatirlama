@@ -4,31 +4,26 @@
     "avatar": "https://avatars.githubusercontent.com/u/176608906?v=4"
   },
   "websites": [
-{
+    {
       "title": "Mini Blog",
       "url": "https://ericismyhero.github.io/miniblog/",
       "icon": "fas fa-blog"
     },
     {
-      "title": "Səni Sevməyimin 200 Səbəbi 😍",
+      "title": "Səni Sevməyimin 200 Səbəbi",
       "url": "https://EricIsMyHero.github.io/seni-sevmeyimin-200-sebebi/",
       "icon": "fas fa-heart"
     },
-{
+    {
       "title": "Bir Şans Daha?",
       "url": "https://ericismyhero.github.io/bir-shans-daha-/",
-      "icon": "fas fa-chance"
+      "icon": "fas fa-question"
     },
     {
       "title": "Hər Gün 1 iltifat",
       "url": "https://ericismyhero.github.io/her-g-n-1-iltifat/",
-      "icon": "fas fa-one"
+      "icon": "fas fa-kiss-wink-heart"
     }
-    {
-      "title": "Mahnı Paylaşma",
-      "url": "https://EricIsMyHero.github.io/mahni-paylashma/",
-      "icon": "fas fa-music"
-    },
   ],
   "social": [
     {
@@ -70,7 +65,7 @@
     },
     {
       "title": "Spotify",
-      "url": "https://open.spotify.com/user/r54xg6cy20z3k1xuif2lrjmu7?si=i3ektKTrSTi1ncGVDhL-cw",
+      "url": "https://open.spotify.com/user/seninhesabin",
       "icon": "fab fa-spotify"
     },
     {
