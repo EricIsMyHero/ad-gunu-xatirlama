@@ -36,8 +36,12 @@ body {
 
 .share-button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 0;        /* əvvəllər 20 idi */
+    right: 0;      /* sağ tərəfə də sıfır boşluq */
+    margin: 0;     /* əlavə boşluqların qarşısını almaq üçün */
+    padding: 0;    /* əlavə boşluqların qarşısını almaq üçün */
+}
+
 }
 
 .share-button button {
