@@ -2,10 +2,10 @@
 :root {
     /* Açıq rejim rəngləri */
     --bg-gradient: linear-gradient(135deg, #ff9a9e, #fad0cd, #fad0cd);
-    --text-color: #000000; 
-    --link-bg: #ffffff;        /* Link və kateqoriya üçün ağ fon */
-    --link-color: #000000;     /* Qara mətn */
-    --border-color: #000000;   /* Qara çərçivə */
+    --text-color: #000000;
+    --link-bg: #ffffff;
+    --link-color: #000000;
+    --border-color: #000000;
     --active-color: #c2185b;
     --h1-color: #000000;
 }
@@ -14,9 +14,9 @@ body.dark-theme {
     /* Qaranlıq rejim rəngləri */
     --bg-gradient: linear-gradient(135deg, #2c3e50, #2c3e50);
     --text-color: #e0e0e0;
-    --link-bg: #000000;        /* Link və kateqoriya üçün qara fon */
-    --link-color: #ffffff;     /* Ağ mətn */
-    --border-color: #aaa;      /* Açıq boz çərçivə */
+    --link-bg: #000000;
+    --link-color: #ffffff;
+    --border-color: #aaa;
     --active-color: #3498db;
     --h1-color: #ffffff;
 }
@@ -36,12 +36,11 @@ body {
 
 .share-button {
     position: absolute;
-    top: 0;        /* əvvəllər 20 idi */
-    right: 0;      /* sağ tərəfə də sıfır boşluq */
-    margin: 0;     /* əlavə boşluqların qarşısını almaq üçün */
-    padding: 0;    /* əlavə boşluqların qarşısını almaq üçün */
-}
-
+    top: 20px;
+    right: 20px;
+    /* İki düyməni yan-yana qoymaq üçün Flexbox */
+    display: flex;
+    gap: 10px; /* Düymələr arasında boşluq */
 }
 
 .share-button button {
@@ -91,9 +90,7 @@ h1 {
     max-width: 400px;
     font-weight: 500;
     text-align: center;
-    display: flex;              /* yeni əlavə */
-    justify-content: center;    /* tam ortalama */
-    white-space: pre-wrap;       /* simvolların düzgün qırılması */
+    white-space: pre-wrap;
 }
 
 .links {
@@ -178,11 +175,12 @@ h1 {
     .share-button {
         top: 10px;
         right: 10px;
+        flex-direction: column; /* Mobil görünüşdə alt-alta olmaları üçün */
+        gap: 5px;
     }
 
     .share-button button {
         padding: 8px 15px;
         font-size: 14px;
     }
-} 
-
+}
