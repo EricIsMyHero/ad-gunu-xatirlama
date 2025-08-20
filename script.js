@@ -84,23 +84,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Ən aşağıdakı mövcud kodlarınızdan sonra əlavə edin
-
-const topBtn = document.getElementById('topBtn');
-
-// Səhifəni aşağıya çəkdikdə düyməni göstər
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 250) {
-        topBtn.style.display = 'flex';
-    } else {
-        topBtn.style.display = 'none';
-    }
-});
-
-// Düyməyə kliklədikdə səhifəni yuxarıya qaytar
-topBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
