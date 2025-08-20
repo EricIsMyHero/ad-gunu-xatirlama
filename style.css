@@ -8,6 +8,7 @@
     --border-color: #000000;
     --active-color: #c2185b;
     --h1-color: #000000;
+    --category-border: #000000; /* Açıq rejim üçün qara çərçivə */
 }
 
 body.dark-theme {
@@ -19,6 +20,7 @@ body.dark-theme {
     --border-color: #aaa;
     --active-color: #3498db;
     --h1-color: #ffffff;
+    --category-border: #ffffff; /* Qaranlıq rejim üçün ağ çərçivə */
 }
 
 body {
@@ -124,14 +126,14 @@ h1 {
 
 .category-button {
     padding: 8px 15px;
-    background-color: var(--category-bg);
+    background-color: transparent;
     border: 2px solid var(--category-border);
     color: var(--link-color);
     border-radius: 20px;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .category-button:hover,
