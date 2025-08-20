@@ -9,6 +9,7 @@
     --active-color: #c2185b;
     --h1-color: #000000;
     --category-border: #000000; /* Açıq rejim üçün qara çərçivə */
+    --category-bg: #ffffff;     /* Açıq rejimdə içi ağ */
 }
 
 body.dark-theme {
@@ -17,10 +18,11 @@ body.dark-theme {
     --text-color: #e0e0e0;
     --link-bg: #000000;
     --link-color: #ffffff;
-    --border-color: #aaa;
+    --border-color: #ffffff; /* Qaranlıq rejimdə link çərçivəsi də ağ olsun */
     --active-color: #3498db;
     --h1-color: #ffffff;
     --category-border: #ffffff; /* Qaranlıq rejim üçün ağ çərçivə */
+    --category-bg: #000000;     /* Qaranlıq rejimdə içi qara */
 }
 
 body {
@@ -107,14 +109,14 @@ h1 {
     border-radius: 10px;
     font-weight: bold;
     border: 2px solid var(--border-color);
-    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    transition: transform 0.2s ease, border-color 0.2s ease;
     animation: fadeIn 1s ease-out;
 }
 
+/* Hover zamanı yalnız böyüsün – rəng dəyişməsin */
 .link-item:hover {
     transform: scale(1.05);
-    background: #f9f9f9;
-    border-color: #666;
+    border-color: var(--active-color);
 }
 
 .categories {
@@ -133,14 +135,14 @@ h1 {
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
 }
 
 .category-button:hover,
 .category-button.active {
-    background-color: var(--link-bg);
-    color: var(--active-color);
+    transform: scale(1.05);
     border-color: var(--active-color);
+    color: var(--active-color);
 }
 
 @keyframes fadeIn {
