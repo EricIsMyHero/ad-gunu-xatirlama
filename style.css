@@ -38,9 +38,6 @@ body {
     position: absolute;
     top: 20px;
     right: 20px;
-    /* İki düyməni yan-yana qoymaq üçün Flexbox */
-    display: flex;
-    gap: 10px; /* Düymələr arasında boşluq */
 }
 
 .share-button button {
@@ -78,7 +75,7 @@ body {
 h1 {
     font-size: 26px;
     margin-bottom: 25px;
-    color: var(--h1-color);
+    color: var(--h1-color); /* Yeni dəyişiklik */
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
@@ -86,11 +83,10 @@ h1 {
     font-size: 16px;
     color: var(--text-color);
     margin-top: -15px;
-    margin-bottom: 20px;
-    max-width: 400px;
+    margin-bottom: 25px;
+    max-width: 300px;
     font-weight: 500;
-    text-align: center;
-    white-space: pre-wrap;
+    text-align: center; /* Yeni əlavə: mətni ortalamak üçün */
 }
 
 .links {
@@ -113,9 +109,8 @@ h1 {
 
 .link-item:hover {
     transform: scale(1.05);
-    background: var(--link-bg);
-    border-color: var(--active-color);
-    color: var(--active-color);
+    background: #f9f9f9;
+    border-color: #666;
 }
 
 .categories {
@@ -126,24 +121,22 @@ h1 {
 }
 
 .category-button {
-    padding: 12px;
-    background: var(--link-bg);
+    padding: 8px 15px;
+    background-color: var(--category-bg);
+    border: 2px solid var(--category-border);
     color: var(--link-color);
-    border: 2px solid var(--border-color);
-    border-radius: 10px;
+    border-radius: 20px;
+    font-size: 14px;
     font-weight: bold;
     cursor: pointer;
-    font-size: 14px;
-    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
-    animation: fadeIn 1s ease-out;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .category-button:hover,
 .category-button.active {
-    transform: scale(1.05);
-    background: var(--link-bg);
-    border-color: var(--active-color);
+    background-color: var(--link-bg);
     color: var(--active-color);
+    border-color: var(--active-color);
 }
 
 @keyframes fadeIn {
@@ -175,8 +168,6 @@ h1 {
     .share-button {
         top: 10px;
         right: 10px;
-        flex-direction: column; /* Mobil görünüşdə alt-alta olmaları üçün */
-        gap: 5px;
     }
 
     .share-button button {
