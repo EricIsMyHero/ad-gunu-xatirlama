@@ -67,11 +67,11 @@
       "icon": "fab fa-github"
     }
   ],
-  "other": [
+ "other": [
     {
-      "title": "LinkedIn",
-      "url": "https://www.linkedin.com/in/%C9%99li-m%C9%99mm%C9%99dov-996049331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      "icon": "fab fa-linkedin"
+      "title": "Təklif və İradlarınız üçün",
+      "url": "mailto:ericismyhero2467@gmail.com",
+      "icon": "fas fa-envelope"
     },
     {
       "title": "Discord Sunucu",
@@ -89,4 +89,3 @@
       "icon": "fab fa-pinterest"
     }
   ]
-}
