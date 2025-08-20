@@ -69,6 +69,11 @@
   ],
   "other": [
     {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/in/%C9%99li-m%C9%99mm%C9%99dov-996049331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "icon": "fab fa-linkedin"
+    },
+    {
       "title": "Discord Sunucu",
       "url": "https://discord.gg/62wNrV79HR",
       "icon": "fab fa-discord"
